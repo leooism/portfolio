@@ -1,0 +1,51 @@
+.blog__body {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+}
+.blog__title {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+.blog__title .image {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: gray;
+}
+
+.blog__title .name {
+	font-size: 22px;
+}
+.blog__left {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-auto-flow: row;
+	gap: 1rem;
+}
+.blog__right {
+}
+
+.blog__date {
+	display: flex;
+	gap: 2rem;
+	color: gray;
+	font-size: 0.8rem;
+}
+
+.blog__summary--text {
+	font-size: 15px;
+	color: gray;
+}
+.blog__summary--heading {
+	display: flex;
+	align-items: center;
+}
+.blog__summary--heading h2 {
+	font-weight: 400;
+	font-size: 20px;
+}
+.blog__summary {
+	display: flex;
+	flex-direction: column;
+}

@@ -1,0 +1,83 @@
+.header {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	align-items: center;
+	padding: 2px;
+	position: static;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.header nav {
+	/* flex-grow: 1; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+}
+.header nav ul {
+	flex: 0.5;
+	display: flex;
+	width: 100%;
+	gap: 4rem;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+}
+.header nav ul li {
+	font-size: 1rem;
+	font-weight: 200;
+	cursor: pointer;
+	position: relative;
+}
+
+.header nav ul li::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: pink;
+	top: 100%;
+	width: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: width 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.header nav ul li:hover::after {
+	width: 100%;
+}
+.btn {
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	border-radius: 40px;
+	/* color: #ffff; */
+	font-size: 1rem;
+}
+.btn-contact {
+	border: 1px solid green;
+	cursor: pointer;
+	background-color: transparent;
+}
+.btn-contact:active {
+	transform: scale(0.85);
+}
+/* 
+.toogle-background {
+	width: 60px;
+	height: 30px;
+	border-radius: 50px;
+	background-color: pink;
+	position: relative;
+}
+.button {
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	border-radius: 50px;
+	transition: all 0.4s linear;
+} */

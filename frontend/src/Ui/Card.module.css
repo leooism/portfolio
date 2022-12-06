@@ -1,0 +1,23 @@
+.card {
+	background-color: #ffffff;
+	box-shadow: 4px 4px 73px rgba(32, 29, 29, 0.25);
+	border-radius: 20px;
+	padding: 15px;
+}
+
+.w-500 {
+	width: 500px;
+}
+.relative {
+	position: relative;
+}
+.h-250 {
+	height: 250px;
+}
+.blog {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 rgba(32, 29, 29, 0.25);
+}
